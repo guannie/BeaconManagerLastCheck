@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		885D5E481F7BF3C6002715B0 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D5E471F7BF3C6002715B0 /* UpdateViewController.swift */; };
+		886BDFE51F75633900457B94 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BDFE41F75633900457B94 /* Place.swift */; };
+		886BDFE71F75634300457B94 /* getPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BDFE61F75634300457B94 /* getPlace.swift */; };
+		886BDFE91F75635600457B94 /* putPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BDFE81F75635600457B94 /* putPlace.swift */; };
+		886BDFEB1F7563FC00457B94 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BDFEA1F7563FC00457B94 /* DataHandler.swift */; };
+		886BDFED1F75714600457B94 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BDFEC1F75714600457B94 /* Data.swift */; };
+		886C66951F829823009626A5 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C66941F829823009626A5 /* CreateViewController.swift */; };
+		88768E091F98E4AB0030F22B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C832141F7BA6BA001F4657 /* MainViewController.swift */; };
+		888491301FA0D2440087341C /* setGeofence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884912F1FA0D2440087341C /* setGeofence.swift */; };
+		888A616A1F94B17200CCEB5F /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888A61691F94B17200CCEB5F /* ExpandableHeaderView.swift */; };
+		888CEE511F9F86BD000C9C4D /* DeepMap.zip in Resources */ = {isa = PBXBuildFile; fileRef = 888CEE501F9F8690000C9C4D /* DeepMap.zip */; };
+		88AA14261F9A013B00586E24 /* BeaconSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA14251F9A013B00586E24 /* BeaconSelector.swift */; };
+		88AA14281F9A0CE700586E24 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA14271F9A0CE700586E24 /* UIColorHex.swift */; };
+		88C4A83A1F94DF4A002F9AEF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4A8391F94DF4A002F9AEF /* TableViewCell.swift */; };
+		88CF1FE71FA23543007CC07B /* HDMMapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CF1FE61FA23543007CC07B /* HDMMapCore.framework */; };
+		88CF1FE81FA23543007CC07B /* HDMMapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88CF1FE61FA23543007CC07B /* HDMMapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88E71DA71FA337A800F8D221 /* Toast Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E71DA61FA337A800F8D221 /* Toast Extension.swift */; };
+		88F372611F95F9760006C92C /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F372601F95F9760006C92C /* Beacon.swift */; };
+		88F372631F964AA80006C92C /* BeaconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F372621F964AA80006C92C /* BeaconController.swift */; };
+		88F3726B1F96516B0006C92C /* beaconCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F3726A1F96516B0006C92C /* beaconCustomCell.xib */; };
+		88F3726D1F9653E40006C92C /* beaconCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3726C1F9653E40006C92C /* beaconCustomCell.swift */; };
+		8E05C8AE1F99FC4700EAEF69 /* HDMMapView+CoordinateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C8AD1F99FC4700EAEF69 /* HDMMapView+CoordinateHelper.swift */; };
+		8E05C8B01F99FE7700EAEF69 /* HDMPoint+CoordinateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C8AF1F99FE7700EAEF69 /* HDMPoint+CoordinateHelper.swift */; };
+		8E05C8B21F99FEC800EAEF69 /* HDMMapCoordinate+PointHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C8B11F99FEC800EAEF69 /* HDMMapCoordinate+PointHelper.swift */; };
+		8E05C8B41F9A0AFD00EAEF69 /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C8B31F9A0AFD00EAEF69 /* SketchView.swift */; };
+		8E05C8B71F9A169E00EAEF69 /* HDMDrawingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C8B61F9A169E00EAEF69 /* HDMDrawingProtocol.swift */; };
+		8E05C8BA1F9A174100EAEF69 /* TouchCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C8B91F9A174100EAEF69 /* TouchCanvasViewController.swift */; };
+		8E05C8BC1F9A18C400EAEF69 /* HDMRectangleDrawHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C8BB1F9A18C400EAEF69 /* HDMRectangleDrawHandler.swift */; };
+		8E41BAC01F877628003EFE15 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08C7D31F86715700C1FDB0 /* CanvasView.swift */; };
+		8E41BAC11F87767A003EFE15 /* DrawPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08C7D21F86714400C1FDB0 /* DrawPolygon.swift */; };
+		8E41BAC91F87B2C8003EFE15 /* CoordinateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E41BAC81F87B2C8003EFE15 /* CoordinateHandler.swift */; };
+		8E5EAF441F98AC97001B82BB /* BaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EAF431F98AC97001B82BB /* BaseMapViewController.swift */; };
+		8E5EAF471F98B1ED001B82BB /* DrawStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EAF461F98B1ED001B82BB /* DrawStackView.swift */; };
+		8E5EAF4E1F98CA9C001B82BB /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EAF4D1F98CA9C001B82BB /* UIView+Anchors.swift */; };
+		8E64A01E1F72C32B00F2844C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E64A01D1F72C32B00F2844C /* AppDelegate.swift */; };
+		8E64A0251F72C32B00F2844C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E64A0231F72C32B00F2844C /* Main.storyboard */; };
+		8E64A0271F72C32B00F2844C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E64A0261F72C32B00F2844C /* Assets.xcassets */; };
+		8E64A02A1F72C32B00F2844C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E64A0281F72C32B00F2844C /* LaunchScreen.storyboard */; };
+		8E81A19C1F94D5A800C0059A /* UpdateMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81A19B1F94D5A800C0059A /* UpdateMapViewController.swift */; };
+		8E9A7DAE1F98A3C300DEB485 /* MainContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A7DAD1F98A3C300DEB485 /* MainContainerViewController.swift */; };
+		8EA117A91F753F10009F409A /* GeofenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA117A81F753F10009F409A /* GeofenceController.swift */; };
+		8EE520331F989CBD00073A38 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE520321F989CBD00073A38 /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E64A03D1F72C6B900F2844C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				88CF1FE81FA23543007CC07B /* HDMMapCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		885D5E471F7BF3C6002715B0 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		886BDFE41F75633900457B94 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		886BDFE61F75634300457B94 /* getPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getPlace.swift; sourceTree = "<group>"; };
+		886BDFE81F75635600457B94 /* putPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = putPlace.swift; sourceTree = "<group>"; };
+		886BDFEA1F7563FC00457B94 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		886BDFEC1F75714600457B94 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		886C66941F829823009626A5 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		8884912F1FA0D2440087341C /* setGeofence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setGeofence.swift; sourceTree = "<group>"; };
+		888A61691F94B17200CCEB5F /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
+		888CEE501F9F8690000C9C4D /* DeepMap.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = DeepMap.zip; sourceTree = "<group>"; };
+		88AA14251F9A013B00586E24 /* BeaconSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSelector.swift; sourceTree = "<group>"; };
+		88AA14271F9A0CE700586E24 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		88C4A8391F94DF4A002F9AEF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		88C832141F7BA6BA001F4657 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		88CF1FE61FA23543007CC07B /* HDMMapCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDMMapCore.framework; sourceTree = "<group>"; };
+		88E71DA61FA337A800F8D221 /* Toast Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toast Extension.swift"; sourceTree = "<group>"; };
+		88F372601F95F9760006C92C /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		88F372621F964AA80006C92C /* BeaconController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconController.swift; sourceTree = "<group>"; };
+		88F3726A1F96516B0006C92C /* beaconCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = beaconCustomCell.xib; sourceTree = "<group>"; };
+		88F3726C1F9653E40006C92C /* beaconCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beaconCustomCell.swift; sourceTree = "<group>"; };
+		8E05C8AD1F99FC4700EAEF69 /* HDMMapView+CoordinateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HDMMapView+CoordinateHelper.swift"; sourceTree = "<group>"; };
+		8E05C8AF1F99FE7700EAEF69 /* HDMPoint+CoordinateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HDMPoint+CoordinateHelper.swift"; sourceTree = "<group>"; };
+		8E05C8B11F99FEC800EAEF69 /* HDMMapCoordinate+PointHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HDMMapCoordinate+PointHelper.swift"; sourceTree = "<group>"; };
+		8E05C8B31F9A0AFD00EAEF69 /* SketchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchView.swift; sourceTree = "<group>"; };
+		8E05C8B61F9A169E00EAEF69 /* HDMDrawingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDMDrawingProtocol.swift; sourceTree = "<group>"; };
+		8E05C8B91F9A174100EAEF69 /* TouchCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchCanvasViewController.swift; sourceTree = "<group>"; };
+		8E05C8BB1F9A18C400EAEF69 /* HDMRectangleDrawHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDMRectangleDrawHandler.swift; sourceTree = "<group>"; };
+		8E08C7D21F86714400C1FDB0 /* DrawPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPolygon.swift; sourceTree = "<group>"; };
+		8E08C7D31F86715700C1FDB0 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		8E41BAC81F87B2C8003EFE15 /* CoordinateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateHandler.swift; sourceTree = "<group>"; };
+		8E5EAF431F98AC97001B82BB /* BaseMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapViewController.swift; sourceTree = "<group>"; };
+		8E5EAF461F98B1ED001B82BB /* DrawStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawStackView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8E5EAF4D1F98CA9C001B82BB /* UIView+Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		8E64A01A1F72C32B00F2844C /* beaconManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beaconManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E64A01D1F72C32B00F2844C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E64A0241F72C32B00F2844C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E64A0261F72C32B00F2844C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E64A0291F72C32B00F2844C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E64A02B1F72C32B00F2844C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E81A19B1F94D5A800C0059A /* UpdateMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMapViewController.swift; sourceTree = "<group>"; };
+		8E9A7DAD1F98A3C300DEB485 /* MainContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerViewController.swift; sourceTree = "<group>"; };
+		8EA117A81F753F10009F409A /* GeofenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceController.swift; sourceTree = "<group>"; };
+		8EE520321F989CBD00073A38 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E64A0171F72C32B00F2844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CF1FE71FA23543007CC07B /* HDMMapCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		886BDFE31F7562BD00457B94 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				886BDFEA1F7563FC00457B94 /* DataHandler.swift */,
+				886BDFE41F75633900457B94 /* Place.swift */,
+				886BDFE61F75634300457B94 /* getPlace.swift */,
+				886BDFE81F75635600457B94 /* putPlace.swift */,
+				886BDFEC1F75714600457B94 /* Data.swift */,
+				88F372601F95F9760006C92C /* Beacon.swift */,
+				8884912F1FA0D2440087341C /* setGeofence.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		88F372641F9650AE0006C92C /* GeofenceTable */ = {
+			isa = PBXGroup;
+			children = (
+				888A61691F94B17200CCEB5F /* ExpandableHeaderView.swift */,
+				88C4A8391F94DF4A002F9AEF /* TableViewCell.swift */,
+				8EA117A81F753F10009F409A /* GeofenceController.swift */,
+				886C66941F829823009626A5 /* CreateViewController.swift */,
+			);
+			path = GeofenceTable;
+			sourceTree = "<group>";
+		};
+		88F372651F9650D70006C92C /* BeaconTable */ = {
+			isa = PBXGroup;
+			children = (
+				88F372621F964AA80006C92C /* BeaconController.swift */,
+				88F3726A1F96516B0006C92C /* beaconCustomCell.xib */,
+				88F3726C1F9653E40006C92C /* beaconCustomCell.swift */,
+				88AA14251F9A013B00586E24 /* BeaconSelector.swift */,
+			);
+			path = BeaconTable;
+			sourceTree = "<group>";
+		};
+		8E05C8B51F9A0C2000EAEF69 /* TouchCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				8E05C8B31F9A0AFD00EAEF69 /* SketchView.swift */,
+				8E05C8B61F9A169E00EAEF69 /* HDMDrawingProtocol.swift */,
+				8E05C8BB1F9A18C400EAEF69 /* HDMRectangleDrawHandler.swift */,
+				8E05C8B91F9A174100EAEF69 /* TouchCanvasViewController.swift */,
+			);
+			path = TouchCanvas;
+			sourceTree = "<group>";
+		};
+		8E05C8BD1F9A20D300EAEF69 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Singletons;
+			path = ../Singletons;
+			sourceTree = "<group>";
+		};
+		8E5EAF451F98B169001B82BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EDB103A1F73F2CF005DF488 /* DrawHandler */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E5EAF4C1F98CA91001B82BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E5EAF4D1F98CA9C001B82BB /* UIView+Anchors.swift */,
+				8E05C8AD1F99FC4700EAEF69 /* HDMMapView+CoordinateHelper.swift */,
+				8E05C8AF1F99FE7700EAEF69 /* HDMPoint+CoordinateHelper.swift */,
+				8E05C8B11F99FEC800EAEF69 /* HDMMapCoordinate+PointHelper.swift */,
+				88AA14271F9A0CE700586E24 /* UIColorHex.swift */,
+				88E71DA61FA337A800F8D221 /* Toast Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E64A0111F72C32B00F2844C = {
+			isa = PBXGroup;
+			children = (
+				88CF1FE61FA23543007CC07B /* HDMMapCore.framework */,
+				8E64A01C1F72C32B00F2844C /* beaconManager */,
+				8E64A01B1F72C32B00F2844C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E64A01B1F72C32B00F2844C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E64A01A1F72C32B00F2844C /* beaconManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E64A01C1F72C32B00F2844C /* beaconManager */ = {
+			isa = PBXGroup;
+			children = (
+				8EF0EFF11FEA8AB600874AFE /* RefactoringCode */,
+				8E5EAF4C1F98CA91001B82BB /* Extensions */,
+				886BDFE31F7562BD00457B94 /* Data */,
+				8EA117A51F753EC3009F409A /* FunctionController */,
+				8E5EAF451F98B169001B82BB /* View */,
+				8EDB102A1F73BEDB005DF488 /* Controller */,
+				8E64A01D1F72C32B00F2844C /* AppDelegate.swift */,
+				888CEE501F9F8690000C9C4D /* DeepMap.zip */,
+				8E64A0231F72C32B00F2844C /* Main.storyboard */,
+				8E64A0261F72C32B00F2844C /* Assets.xcassets */,
+				8E64A0281F72C32B00F2844C /* LaunchScreen.storyboard */,
+				8E64A02B1F72C32B00F2844C /* Info.plist */,
+				8E81A19B1F94D5A800C0059A /* UpdateMapViewController.swift */,
+			);
+			path = beaconManager;
+			sourceTree = "<group>";
+		};
+		8E9A7DAF1F98A75100DEB485 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8E9A7DAD1F98A3C300DEB485 /* MainContainerViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		8E9A7DB01F98A77500DEB485 /* MapController */ = {
+			isa = PBXGroup;
+			children = (
+				8E5EAF431F98AC97001B82BB /* BaseMapViewController.swift */,
+				8EE520321F989CBD00073A38 /* MapViewController.swift */,
+			);
+			path = MapController;
+			sourceTree = "<group>";
+		};
+		8EA117A51F753EC3009F409A /* FunctionController */ = {
+			isa = PBXGroup;
+			children = (
+				88F372651F9650D70006C92C /* BeaconTable */,
+				88F372641F9650AE0006C92C /* GeofenceTable */,
+				885D5E471F7BF3C6002715B0 /* UpdateViewController.swift */,
+			);
+			path = FunctionController;
+			sourceTree = "<group>";
+		};
+		8EDB102A1F73BEDB005DF488 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E9A7DAF1F98A75100DEB485 /* MainViewController */,
+				88C832141F7BA6BA001F4657 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EDB103A1F73F2CF005DF488 /* DrawHandler */ = {
+			isa = PBXGroup;
+			children = (
+				8E08C7D31F86715700C1FDB0 /* CanvasView.swift */,
+				8E08C7D21F86714400C1FDB0 /* DrawPolygon.swift */,
+				8E41BAC81F87B2C8003EFE15 /* CoordinateHandler.swift */,
+			);
+			path = DrawHandler;
+			sourceTree = "<group>";
+		};
+		8EF0EFF11FEA8AB600874AFE /* RefactoringCode */ = {
+			isa = PBXGroup;
+			children = (
+				8E5EAF461F98B1ED001B82BB /* DrawStackView.swift */,
+				8E05C8B51F9A0C2000EAEF69 /* TouchCanvas */,
+				8E9A7DB01F98A77500DEB485 /* MapController */,
+				8E05C8BD1F9A20D300EAEF69 /* Singletons */,
+			);
+			path = RefactoringCode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E64A0191F72C32B00F2844C /* beaconManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E64A02E1F72C32B00F2844C /* Build configuration list for PBXNativeTarget "beaconManager" */;
+			buildPhases = (
+				8E64A0161F72C32B00F2844C /* Sources */,
+				8E64A0171F72C32B00F2844C /* Frameworks */,
+				8E64A0181F72C32B00F2844C /* Resources */,
+				8E64A03D1F72C6B900F2844C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beaconManager;
+			productName = MultipleHDMMapView;
+			productReference = 8E64A01A1F72C32B00F2844C /* beaconManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E64A0121F72C32B00F2844C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = HDMI;
+				TargetAttributes = {
+					8E64A0191F72C32B00F2844C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8E64A0151F72C32B00F2844C /* Build configuration list for PBXProject "beaconManager" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E64A0111F72C32B00F2844C;
+			productRefGroup = 8E64A01B1F72C32B00F2844C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E64A0191F72C32B00F2844C /* beaconManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E64A0181F72C32B00F2844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888CEE511F9F86BD000C9C4D /* DeepMap.zip in Resources */,
+				8E64A02A1F72C32B00F2844C /* LaunchScreen.storyboard in Resources */,
+				88F3726B1F96516B0006C92C /* beaconCustomCell.xib in Resources */,
+				8E64A0271F72C32B00F2844C /* Assets.xcassets in Resources */,
+				8E64A0251F72C32B00F2844C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E64A0161F72C32B00F2844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88AA14281F9A0CE700586E24 /* UIColorHex.swift in Sources */,
+				88768E091F98E4AB0030F22B /* MainViewController.swift in Sources */,
+				88F372611F95F9760006C92C /* Beacon.swift in Sources */,
+				88F372631F964AA80006C92C /* BeaconController.swift in Sources */,
+				8E41BAC91F87B2C8003EFE15 /* CoordinateHandler.swift in Sources */,
+				886C66951F829823009626A5 /* CreateViewController.swift in Sources */,
+				8EE520331F989CBD00073A38 /* MapViewController.swift in Sources */,
+				8E05C8B21F99FEC800EAEF69 /* HDMMapCoordinate+PointHelper.swift in Sources */,
+				886BDFE91F75635600457B94 /* putPlace.swift in Sources */,
+				8E05C8B41F9A0AFD00EAEF69 /* SketchView.swift in Sources */,
+				888491301FA0D2440087341C /* setGeofence.swift in Sources */,
+				8E41BAC01F877628003EFE15 /* CanvasView.swift in Sources */,
+				886BDFEB1F7563FC00457B94 /* DataHandler.swift in Sources */,
+				8E05C8B01F99FE7700EAEF69 /* HDMPoint+CoordinateHelper.swift in Sources */,
+				886BDFE51F75633900457B94 /* Place.swift in Sources */,
+				8E05C8BA1F9A174100EAEF69 /* TouchCanvasViewController.swift in Sources */,
+				885D5E481F7BF3C6002715B0 /* UpdateViewController.swift in Sources */,
+				886BDFE71F75634300457B94 /* getPlace.swift in Sources */,
+				8E81A19C1F94D5A800C0059A /* UpdateMapViewController.swift in Sources */,
+				8EA117A91F753F10009F409A /* GeofenceController.swift in Sources */,
+				8E05C8BC1F9A18C400EAEF69 /* HDMRectangleDrawHandler.swift in Sources */,
+				8E5EAF471F98B1ED001B82BB /* DrawStackView.swift in Sources */,
+				8E41BAC11F87767A003EFE15 /* DrawPolygon.swift in Sources */,
+				88F3726D1F9653E40006C92C /* beaconCustomCell.swift in Sources */,
+				8E5EAF441F98AC97001B82BB /* BaseMapViewController.swift in Sources */,
+				8E05C8AE1F99FC4700EAEF69 /* HDMMapView+CoordinateHelper.swift in Sources */,
+				888A616A1F94B17200CCEB5F /* ExpandableHeaderView.swift in Sources */,
+				88C4A83A1F94DF4A002F9AEF /* TableViewCell.swift in Sources */,
+				8E9A7DAE1F98A3C300DEB485 /* MainContainerViewController.swift in Sources */,
+				8E05C8B71F9A169E00EAEF69 /* HDMDrawingProtocol.swift in Sources */,
+				88AA14261F9A013B00586E24 /* BeaconSelector.swift in Sources */,
+				8E5EAF4E1F98CA9C001B82BB /* UIView+Anchors.swift in Sources */,
+				88E71DA71FA337A800F8D221 /* Toast Extension.swift in Sources */,
+				8E64A01E1F72C32B00F2844C /* AppDelegate.swift in Sources */,
+				886BDFED1F75714600457B94 /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E64A0231F72C32B00F2844C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E64A0241F72C32B00F2844C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E64A0281F72C32B00F2844C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E64A0291F72C32B00F2844C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E64A02C1F72C32B00F2844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E64A02D1F72C32B00F2844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E64A02F1F72C32B00F2844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PKZ698D7BP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/beaconManager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdmi.BeaconManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E64A0301F72C32B00F2844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PKZ698D7BP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/beaconManager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdmi.BeaconManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E64A0151F72C32B00F2844C /* Build configuration list for PBXProject "beaconManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E64A02C1F72C32B00F2844C /* Debug */,
+				8E64A02D1F72C32B00F2844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E64A02E1F72C32B00F2844C /* Build configuration list for PBXNativeTarget "beaconManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E64A02F1F72C32B00F2844C /* Debug */,
+				8E64A0301F72C32B00F2844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E64A0121F72C32B00F2844C /* Project object */;
+}

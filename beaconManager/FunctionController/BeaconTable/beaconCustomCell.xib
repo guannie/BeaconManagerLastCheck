@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="beaconCell" rowHeight="160" id="Swp-mn-rgq" customClass="beaconCustomCell" customModule="beaconManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Swp-mn-rgq" id="VAH-SQ-xR0">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uji-o0-7Jm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
+                        <accessibility key="accessibilityConfiguration" label="Beacon Name"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="RnF-O5-zH6"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Beacon Name">
+                                <attributes>
+                                    <font key="NSFont" size="20" name="Baskerville-SemiBold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEh-jh-fcu">
+                        <rect key="frame" x="8" y="29" width="359" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="Edg-Sb-Bqi"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="latitude">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="TrebuchetMS"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-1K-gEd">
+                        <rect key="frame" x="8" y="68" width="359" height="23"/>
+                        <attributedString key="attributedText">
+                            <fragment content="visibility">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="TrebuchetMS"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWs-rQ-MC4">
+                        <rect key="frame" x="8" y="89" width="359" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="RYg-5a-y5a"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="battery level">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="TrebuchetMS"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiE-AL-cil">
+                        <rect key="frame" x="8" y="109" width="359" height="23"/>
+                        <attributedString key="attributedText">
+                            <fragment content="battery last changed">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="TrebuchetMS"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlw-h1-QWm">
+                        <rect key="frame" x="8" y="128" width="359" height="23"/>
+                        <attributedString key="attributedText">
+                            <fragment content="hardware">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="TrebuchetMS"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqB-I3-7uh">
+                        <rect key="frame" x="8" y="47" width="359" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="kAx-3J-zVg"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="longitude">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="TrebuchetMS"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uji-o0-7Jm" firstAttribute="centerX" secondItem="ZEh-jh-fcu" secondAttribute="centerX" id="2Jk-8e-2jk"/>
+                    <constraint firstItem="cqB-I3-7uh" firstAttribute="leading" secondItem="1ir-1K-gEd" secondAttribute="leading" id="51R-J9-JmF"/>
+                    <constraint firstItem="WiE-AL-cil" firstAttribute="trailing" secondItem="nlw-h1-QWm" secondAttribute="trailing" id="6Jf-2u-6gr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nlw-h1-QWm" secondAttribute="bottom" constant="0.5" id="B2H-eY-HFU"/>
+                    <constraint firstItem="ZEh-jh-fcu" firstAttribute="leading" secondItem="cqB-I3-7uh" secondAttribute="leading" id="NQl-eY-ED6"/>
+                    <constraint firstItem="WiE-AL-cil" firstAttribute="top" secondItem="1ir-1K-gEd" secondAttribute="bottom" constant="18" id="QkR-Kj-j9k"/>
+                    <constraint firstItem="1ir-1K-gEd" firstAttribute="centerY" secondItem="VAH-SQ-xR0" secondAttribute="centerY" id="StU-X0-lzV"/>
+                    <constraint firstItem="mWs-rQ-MC4" firstAttribute="top" secondItem="cqB-I3-7uh" secondAttribute="bottom" constant="19" id="TNT-TE-9JM"/>
+                    <constraint firstItem="cqB-I3-7uh" firstAttribute="trailing" secondItem="1ir-1K-gEd" secondAttribute="trailing" id="Vvj-Co-rX6"/>
+                    <constraint firstItem="1ir-1K-gEd" firstAttribute="trailing" secondItem="mWs-rQ-MC4" secondAttribute="trailing" id="Wz6-Y5-D8v"/>
+                    <constraint firstItem="1ir-1K-gEd" firstAttribute="top" secondItem="ZEh-jh-fcu" secondAttribute="bottom" constant="16" id="c62-sm-snA"/>
+                    <constraint firstAttribute="trailing" secondItem="uji-o0-7Jm" secondAttribute="trailing" id="d1l-ix-fdP"/>
+                    <constraint firstItem="1ir-1K-gEd" firstAttribute="leading" secondItem="mWs-rQ-MC4" secondAttribute="leading" id="gHl-6b-vWQ"/>
+                    <constraint firstItem="uji-o0-7Jm" firstAttribute="leading" secondItem="VAH-SQ-xR0" secondAttribute="leading" id="gpD-5F-LCC"/>
+                    <constraint firstItem="ZEh-jh-fcu" firstAttribute="top" secondItem="uji-o0-7Jm" secondAttribute="bottom" constant="8" symbolic="YES" id="kS0-mJ-IMz"/>
+                    <constraint firstItem="uji-o0-7Jm" firstAttribute="top" secondItem="VAH-SQ-xR0" secondAttribute="top" id="kv8-0E-ocY"/>
+                    <constraint firstItem="cqB-I3-7uh" firstAttribute="top" secondItem="uji-o0-7Jm" secondAttribute="bottom" constant="26" id="nfs-6F-TCW"/>
+                    <constraint firstItem="mWs-rQ-MC4" firstAttribute="leading" secondItem="WiE-AL-cil" secondAttribute="leading" id="oJw-La-DAk"/>
+                    <constraint firstItem="mWs-rQ-MC4" firstAttribute="trailing" secondItem="WiE-AL-cil" secondAttribute="trailing" id="puA-gL-hnw"/>
+                    <constraint firstItem="ZEh-jh-fcu" firstAttribute="trailing" secondItem="cqB-I3-7uh" secondAttribute="trailing" id="rVj-T8-TLk"/>
+                    <constraint firstItem="WiE-AL-cil" firstAttribute="leading" secondItem="nlw-h1-QWm" secondAttribute="leading" id="uMX-rB-R2f"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WiE-AL-cil" secondAttribute="bottom" constant="19.5" id="vOn-cO-UDp"/>
+                    <constraint firstItem="nlw-h1-QWm" firstAttribute="top" secondItem="mWs-rQ-MC4" secondAttribute="bottom" constant="16" id="wgk-2r-4gJ"/>
+                    <constraint firstItem="ZEh-jh-fcu" firstAttribute="leading" secondItem="VAH-SQ-xR0" secondAttribute="leadingMargin" id="yrL-dP-ZHn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="battery_level" destination="mWs-rQ-MC4" id="nkM-S3-7an"/>
+                <outlet property="battery_updated" destination="WiE-AL-cil" id="oEW-0q-Hg5"/>
+                <outlet property="beaconName" destination="uji-o0-7Jm" id="Gpa-ic-sr1"/>
+                <outlet property="hardware" destination="nlw-h1-QWm" id="PKQ-Pp-X4M"/>
+                <outlet property="latitude" destination="ZEh-jh-fcu" id="Exx-aB-5iD"/>
+                <outlet property="longitude" destination="cqB-I3-7uh" id="cfs-JW-39x"/>
+                <outlet property="visibility" destination="1ir-1K-gEd" id="xYD-ze-wpb"/>
+            </connections>
+            <point key="canvasLocation" x="54.5" y="154"/>
+        </tableViewCell>
+    </objects>
+</document>
